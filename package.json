@@ -1,0 +1,14 @@
+{
+  "name": "echo",
+  "version": "1.0.0",
+  "description": "Echo server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raul Reynoso",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^16.0.0"
+  }
+}
