@@ -21,7 +21,7 @@ app.post('/echo', (req,res)=>{
     res.json(req.body)
 })
 // healthcheck
-app.post('/diagnostic', (req,res)=>{
+app.get('/diagnostic', (req,res)=>{
     res.send("OK")
 })
 
