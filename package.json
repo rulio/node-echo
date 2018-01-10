@@ -4,11 +4,14 @@
   "description": "Echo server",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm  test",
+    "start": "node server.js"
   },
   "author": "Raul Reynoso",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
     "hapi": "^16.0.0"
   }
 }
