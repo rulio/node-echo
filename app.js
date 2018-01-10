@@ -16,9 +16,15 @@ app.post('/', (req,res)=>{
 app.get('/echo', (req,res)=>{
     res.json(req.query);
 })
+
 app.post('/echo', (req,res)=>{
     res.json(req.body)
 })
+// healthcheck
+app.post('/diagnostic', (req,res)=>{
+    res.send("OK")
+})
+
 // console.log(app)
 module.exports = app
 
