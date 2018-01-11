@@ -26,7 +26,7 @@ app.post('/echo', (req,res)=>{
 })
 
 app.get('/heat', (req,res)=>{
-    res.send("hot")
+    res.send("hot ")
 })
 
 
