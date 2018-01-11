@@ -20,6 +20,16 @@ app.get('/echo', (req,res)=>{
 app.post('/echo', (req,res)=>{
     res.json(req.body)
 })
+
+app.post('/echo', (req,res)=>{
+    res.json(req.body)
+})
+
+app.get('/heat', (req,res)=>{
+    res.send("hot")
+})
+
+
 // healthcheck
 app.get('/diagnostic', (req,res)=>{
     res.send("OK")
@@ -27,4 +37,6 @@ app.get('/diagnostic', (req,res)=>{
 
 // console.log(app)
 module.exports = app
+
+
 
