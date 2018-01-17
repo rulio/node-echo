@@ -1,1 +1,5 @@
 node_modules/
+.heroku/
+last_pack_release.out
+Procfile
+nodejs.sh
