@@ -29,6 +29,10 @@ app.get('/ping', (req,res)=>{
     res.send("pong ")
 })
 
+app.get('/show-env', (req,res)=>{
+    console.log(process.env)
+    res.send(process.env.TEST_ENV)
+})
 
 // healthcheck
 app.get('/diagnostic', (req,res)=>{
