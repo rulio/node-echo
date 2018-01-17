@@ -25,8 +25,8 @@ app.post('/echo', (req,res)=>{
     res.json(req.body)
 })
 
-app.get('/heat', (req,res)=>{
-    res.send("hot ")
+app.get('/ping', (req,res)=>{
+    res.send("pong ")
 })
 
 
