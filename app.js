@@ -30,8 +30,10 @@ app.get('/ping', (req,res)=>{
 })
 
 app.get('/show-env', (req,res)=>{
-    console.log(process.env)
-    res.send(process.env.TEST_ENV)
+    var obj = {};
+    obj.headers = req.headers;
+    obj.env = process.env.TEST_ENV
+    res.json(obj)
 })
 
 // healthcheck
