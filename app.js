@@ -32,7 +32,7 @@ app.get('/ping', (req,res)=>{
 app.get('/show-env', (req,res)=>{
     var obj = {};
     obj.headers = req.headers;
-    obj.env = process.env.TEST_ENV
+    obj.env = process.env
     res.json(obj)
 })
 
